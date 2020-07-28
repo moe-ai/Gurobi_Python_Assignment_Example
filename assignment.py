@@ -5,9 +5,9 @@ from numpy import *
 def mycallback(model, where):
 	if where == GRB.callback.MIP:
 		print model.cbGet(GRB.callback.MIP_NODCNT)
-		print model.cbGet(GRB.callback.MIP_ITRCNT),'HEY MOTHERFUCKER'
+		print model.cbGet(GRB.callback.MIP_ITRCNT),'HEY '
 	if where == GRB.callback.MIPNODE:
-		print model.cbGet(GRB.callback.MIPNODE_OBJBST),'BEST OBJ'
+		print model.cbGet(GRB.callback.MIPNODE_OBJBST),'BEST OB'
 '''
 
 
